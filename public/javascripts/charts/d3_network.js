@@ -97,7 +97,7 @@ function getLinkColor(node, link) {
 }
 
 function getLinkWidth(link){
-  return link.strength * 5;
+  return link.strength * 2;
 }
 
 function getTextColor(node, neighbors) {

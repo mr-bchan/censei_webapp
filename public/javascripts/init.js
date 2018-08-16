@@ -30,6 +30,9 @@ function init(){
       $('#watchwords').on('itemAdded', function(event) {
           words = $('#watchwords').val();
           words = words.replace(/,/g, ',')
+          words = words.replace(' + ', '%2B')
+          words = words.replace(' - ', '%2A')
+
           console.log(words)
           update_d3_graph(words);
       });
@@ -37,6 +40,9 @@ function init(){
          $('#watchwords').on('itemRemoved', function(event) {
           words = $('#watchwords').val();
           words = words.replace(/,/g, ',')
+          words = words.replace(' + ', '%2B')
+          words = words.replace(' - ', '%2A')
+
           console.log(words)
           update_d3_graph(words);
       });
