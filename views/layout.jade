@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+  head
+    title Demo
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    link(rel="shortcut icon" href="/images/censei-icon.ico")   
+    link(href='vendor/datatables-plugins/dataTables.bootstrap.css', rel='stylesheet', type='text/css')
+    link(href='vendor/datatables-responsive/dataTables.responsive.css', rel='stylesheet', type='text/css')
+    link(href='vendor/boostrap-tagsinput/bootstrap-tagsinput.css', rel='stylesheet', type='text/css')
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+
+    script(src='vendor/datatables/js/jquery.dataTables.min.js')
+
+    script(src='vendor/datatables-plugins/dataTables.bootstrap.min.js')
+    script(src='vendor/datatables-responsive/dataTables.responsive.js')
+
+
+    script(src="https://d3js.org/d3.v4.min.js")
+
+    script(src='vendor/boostrap-tagsinput/bootstrap-tagsinput.js')
+    script(src='vendor/d3/d3.layout.cloud.js')
+    script(src="vendor/plotly/plotly-latest.min.js")
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css')
+    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js')
+
+    script(src='javascripts/init.js')
+    script(src='javascripts/requests.js') 
+    script(src='javascripts/data_table.js')
+    
+    script(src='javascripts/charts/d3_network.js')
+    script(src='javascripts/charts/comments_timeseries.js')
+    
+    link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+    
+    body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
+      block content

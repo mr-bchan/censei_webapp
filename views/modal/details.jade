@@ -1,0 +1,102 @@
+// Modal
+#myModal.modal.fade(role='dialog')
+  .modal-dialog.modal-lg
+    // Modal content
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal') ×
+     
+      .modal-body
+        .row
+          .col-sm-6(style='height:300px;').scroll-y
+            .row
+              .table-responsive.container-fluid
+
+                h4 Title Details
+                table.display.table-bordered.table-hover.table-striped(style="width:100%").text-center 
+                  tr
+                    td  
+                      b EPEB Type
+                    td 
+                      span#modal_type_field
+                  tr
+                    td
+                      span RD Branch
+                    td
+                      span#modal_office_field                   
+                  tr
+                    td
+                      span Title Status
+                    td
+                      span Registered
+
+                  tr
+                    td
+                      span Date of Registration
+                    td
+                      span 01/01/1901
+                br      
+                h4 Property Details
+                table.display.table-bordered.table-hover.table-striped(style="width:100%").text-center 
+                  tr
+                    td Address
+                    td 
+                      span#modal_address_field
+
+                  tr    
+                    td Barangay
+                    td 
+                      span#modal_barangay_field
+                  
+                  tr
+                    td Municipality
+                    td 
+                      span#modal_municipality_field
+                    
+                   tr   
+                    td Province
+                    td 
+                      span#modal_province_field
+
+                br      
+                h4 Contact Details
+
+                table.display.table-bordered.table-hover.table-striped(style="width:100%").text-center 
+                  tr   
+                    td  
+                      b Owner Name
+                    td 
+                      span Juan Dela Cruz
+
+                  tr
+                    td
+                      span Contact Information
+                    td 
+                      span 09XX-XXX-XXXX
+
+          .col-sm-6
+            #myCarousel.carousel.slide(data-ride='carousel')
+              // Indicators
+              ol.carousel-indicators
+                li.active(data-target='#myCarousel', data-slide-to='0')
+                li(data-target='#myCarousel', data-slide-to='1')
+                li(data-target='#myCarousel', data-slide-to='2')
+              // Wrapper for slides
+              .carousel-inner
+                .item.active
+                  img(src='https://i2.au.reastatic.net/800x600/83624d4fe05edc2df3fdbc6371412f0adbb3d2f9ce6588d114e77ff8b06e9bda/main.jpg', alt='Los Angeles', style='width:100%;height:300px')
+                .item
+                  img(src='https://www.privateproperty.com.ng/news/wp-content/uploads/sites/4/2017/07/blog_img_1.jpg', alt='Chicago', style='width:100%;height:300px')
+                .item
+                  img(src='https://www.privateproperty.com.ng/news/wp-content/uploads/sites/4/2017/07/Rent.jpg', alt='New york', style='width:100%;height:300px')
+              // Left and right controls
+              a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                span.glyphicon.glyphicon-chevron-left
+                span.sr-only Previous
+              a.right.carousel-control(href='#myCarousel', data-slide='next')
+                span.glyphicon.glyphicon-chevron-right
+                span.sr-only Next
+
+     
+      .modal-footer
+        button.btn.btn-default(type='button', data-dismiss='modal') Close
