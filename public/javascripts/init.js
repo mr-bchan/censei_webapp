@@ -23,9 +23,10 @@ function init(){
       var_date.setDate(var_date.getDate() - 14)
       from_date_input.datepicker('setDate',  var_date)
 
-      $('#watchwords').tagsinput('add', 'duterte');
-      $('#watchwords').tagsinput('add', 'drugs');
-      $('#watchwords').tagsinput('add', 'critics');  
+      $('#watchwords').tagsinput('add', 'economy');
+      $('#watchwords').tagsinput('add', 'budget');
+      $('#watchwords').tagsinput('add', 'maring');  
+      $('#watchwords').tagsinput('add', 'boracay');  
 
       $('#watchwords').on('itemAdded', function(event) {
           words = $('#watchwords').val();
@@ -98,8 +99,12 @@ function init(){
     // draw_wordcloud();
     init_graph();
 
-   input_terms = ['duterte', 'critics', 'drugs']
-	  update_d3_graph(input_terms);
+          words = $('#watchwords').val();
+          words = words.replace(/,/g, ',')
+          words = words.replace(' + ', '%2B')
+          words = words.replace(' - ', '%2A')
+
+	  update_d3_graph(words);
 
     // refresh_comments_graph('duterte');
 }
